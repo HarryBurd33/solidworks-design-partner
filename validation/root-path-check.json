@@ -1,0 +1,19 @@
+{
+  "method": "Independent Python path-string oracle for VBA algorithm; not Windows filesystem/VBA execution",
+  "cases": [
+    {
+      "output": "C:\\plate.SLDPRT",
+      "expected_parent": "C:\\"
+    },
+    {
+      "output": "C:\\designs\\plate.SLDPRT",
+      "expected_parent": "C:\\designs"
+    },
+    {
+      "output": "\\\\server\\share\\plate.SLDPRT",
+      "expected_parent": "\\\\server\\share"
+    }
+  ],
+  "old_algorithm_fails_root_case": true,
+  "new_algorithm_passes_all": true
+}

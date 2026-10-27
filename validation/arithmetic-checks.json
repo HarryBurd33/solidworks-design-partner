@@ -1,0 +1,52 @@
+{
+  "wall_revision_mm": {
+    "old_cavity": [
+      "96",
+      "66"
+    ],
+    "new_cavity": [
+      "94",
+      "64"
+    ],
+    "required": [
+      95,
+      65
+    ],
+    "fits_after_revision": false
+  },
+  "inches_to_mm": [
+    "50.8",
+    "25.4"
+  ],
+  "complete_enclosure_mm": {
+    "inner": [
+      84,
+      54,
+      20
+    ],
+    "outer": [
+      88,
+      58,
+      24
+    ],
+    "board_holes_part_xy": [
+      [
+        7,
+        7
+      ],
+      [
+        81,
+        7
+      ],
+      [
+        81,
+        51
+      ],
+      [
+        7,
+        51
+      ]
+    ]
+  },
+  "method": "Independent Decimal calculations from frozen fixture; not CAD inspection"
+}

@@ -1,0 +1,5 @@
+{
+  "raw_private_candidate_sha256": "dcc4c43a545c31bb17189cb0ad4988959b98655afcc16de3e703467a723bac6d",
+  "public_redacted_candidate_sha256": "53ced8247803660765c4d6e8aeed7a09a4b2ef15fcced66514098bcfbe638a0a",
+  "transformation": "Only absolute local build-root prefixes replaced with <REPO_ROOT>/; raw response hashes retained in model-grades.json"
+}

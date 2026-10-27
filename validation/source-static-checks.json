@@ -1,0 +1,12 @@
+{
+  "method": "Static source inspection; no VBA compilation or CAD execution",
+  "fixture": "80x40x3 mm",
+  "explicit_mm_to_m": true,
+  "first_collision_before_new_document": true,
+  "no_programmatic_existing_doc_close": true,
+  "save_result_and_errors": true,
+  "new_native_file_presence": true,
+  "smoke_source_sha256": "fac0a3e40d5aeb2028ba68f54807ef50ee010006e55d98109ff76c499d9f6252",
+  "vba_compile": "unavailable",
+  "live_cad": "unavailable"
+}

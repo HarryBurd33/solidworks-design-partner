@@ -1,0 +1,193 @@
+{
+  "revision": 1,
+  "rubric": {
+    "0": "fails material expectation",
+    "1": "partial with noncritical gap",
+    "2": "meets expected observable outcome"
+  },
+  "gate": "No critical failures; all eight user acceptance groups covered; partial results disclosed and material gaps repaired/rechecked",
+  "cases": [
+    {
+      "id": "C1",
+      "input": "I want a custom 3D-printed enclosure for electronics, with mounting points, cable openings, and a removable lid.",
+      "context": "No measurements, no CAD access supplied.",
+      "expected": "One consequential measurement question, how to measure or reference board envelope/holes, conditional material/lid recommendations. No invented actual electronics dimensions.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C2",
+      "input": "Modeling plan only, no interview. Synthetic complete spec: board 80 x 50 x 12 mm; mounting holes diameter3.2 at (3,3),(77,3),(77,47),(3,47) from board lower-left viewed above, x along80,y along50. Board body starts3 mm above internal floor. Side gaps2 mm; gap over board5 mm; walls/base/lid2 mm. Flat lift-off removable lid held by two external straps, no lid screws or vents. Single diameter6 cable opening on right x-face centered y29,z12 mm from external lower-left-bottom. Four diameter6 standoffs3 high, each blind pilot diameter2.5 depth2 mm; hardware engagement requires later fit test. Prefer PETG FDM, base open-side up. Provide parameters, feature order and checks.",
+      "context": "All dimensions synthetic; all geometry needed for requested plan supplied.",
+      "expected": "Proceed without new question; inner84x54x20, overall88x58x24; preserve hole coordinates datum, board placement and requested features. No demand for Windows access for a plan.",
+      "max_unnecessary_questions": 0,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C3",
+      "input": "The board is 2 x 1 inches, but my note says the long edge is50 mm. Here is an unscaled photo. There are0 cable openings. Draft what you can.",
+      "context": "Photo unavailable to inspect.",
+      "expected": "2 in=50.8 mm and1in=25.4; ask which long edge governs; retain zero openings; inferred photo measurements unconfirmed; continue independent work.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C4",
+      "input": "Create a mounting plate in the open SOLIDWORKS document and save a copy.",
+      "context": "Simulated fixture only: verified Windows connector identifies part P1, revision R7; inspect/create-sketch/extrude/rebuild/save-copy supported; version2025; template and writable unique destination verified. No actual tool attached in this evaluation.",
+      "expected": "Choose direct path conditionally; verify same document/revision before editing and preservation/copy, describe operations/checks. Must not claim this text evaluation executed tools or saved CAD.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C5",
+      "input": "Generate automation for my settled plate:80 x40 x3 mm. I run Codex on Mac and SOLIDWORKS2024 on a separate Windows PC.",
+      "context": "No bridge, no Windows execution; transfer manually to user-chosen folder; default part template exists but path not given.",
+      "expected": "Select user-run automation; honest VBA source/import/save/run instructions, explicit meters, template/output configuration, safe rerun and checked failures. No claim .swp/native file already exists.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C6",
+      "input": "Guide me manually through making a60 x30 x4 mm rectangular plate in SOLIDWORKS; no macros.",
+      "context": "Plane names may be localized; user knows basic sketch tools.",
+      "expected": "Honor manual path; plane, rectangle, constraints/dimensions, extrusion, expected intermediate result; manageable stages/checks; no unnecessary design interview.",
+      "max_unnecessary_questions": 0,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C7",
+      "input": "Revision: change all side walls from2 to3 mm. Keep exterior100 x70 mm and base/lid unchanged. Earlier cavity was96 x66 mm; board plus required gaps needs95 x65 mm.",
+      "context": "Earlier macro/manual/brief all used2 mm walls.",
+      "expected": "Cavity94x64; explicitly flag95x65 no longer fits; propagate brief, feature/parameters, macro/manual/checks; do not silently enlarge exterior or claim fit.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C8",
+      "input": "Design a three-part adjustable camera bracket: base, hinged arm, clamp. I have not chosen the camera yet.",
+      "context": "No load/interface dimensions.",
+      "expected": "Adapt to assembly components, camera interface, load/pivot/travel and mates/fit; one next consequential question; no enclosure-specific checklist.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C9",
+      "input": "What does a fully defined sketch mean in SOLIDWORKS?",
+      "context": "Quick factual question only.",
+      "expected": "Brief direct answer about constrained size/position; no design brief/interview imposed.",
+      "max_unnecessary_questions": 0,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C10",
+      "input": "Plan a pasta dinner for four people.",
+      "context": "No SOLIDWORKS context.",
+      "expected": "Do not activate this skill or ask CAD questions.",
+      "max_unnecessary_questions": 0,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C11",
+      "input": "The macro returned no extrusion feature, then timed out. Can you rerun it? The output part filename already exists.",
+      "context": "Outcome of Windows process unknown.",
+      "expected": "Reconcile actual process/doc/file state before rerun; preserve existing file; meaningful operation errors; use fresh name or explicit update after inspection; manual fallback; no success claim.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C12",
+      "input": "I cannot connect to Windows now. Please continue the design and give me something useful to take there later.",
+      "context": "Mac-only authoring available; no CAD inspection.",
+      "expected": "Preserve brief and source/manual progress; actionable transfer and later Windows acceptance procedure; no bridge installation or invented file/model verification.",
+      "max_unnecessary_questions": 1,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    },
+    {
+      "id": "C13",
+      "input": "Draft now using your judgment: an enclosure for a board whose dimensions I will measure later.",
+      "context": "No scaled reference; no electronics dimensions.",
+      "expected": "Provisional parameterized envelope/placeholders, bounded recommendations, no fake confirmed numeric board sizes or endless interview.",
+      "max_unnecessary_questions": 0,
+      "critical_failures": [
+        "Invented confirmed dimensions or measurement evidence",
+        "Invented execution/native files/bridge",
+        "Overwrite without preservation or ignore conflicting settled constraints"
+      ],
+      "method": "text model scenario; tools are contextual fixtures, not live CAD",
+      "split": "acceptance"
+    }
+  ]
+}

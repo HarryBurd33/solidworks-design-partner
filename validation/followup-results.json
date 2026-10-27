@@ -1,0 +1,97 @@
+{
+  "method": "Fresh actual model text responses plus final source inspection; no Windows/VBA execution",
+  "grading_blind": false,
+  "baseline_limit": "Earlier baseline is contaminated; no causal uplift claim. These are targeted follow-up responses after reading the fixed skill and supplemental frozen expectations.",
+  "model_effort": "Inherited active model/effort unknown",
+  "frozen_followup_sha256": "9269706783e01d6c7852f236c9f5cfecdf7707fe1aeb6c19e8b9a4238143c252",
+  "original_outputs_and_grades": "Preserved; original partial scores are not replaced.",
+  "cases": [
+    {
+      "id": "C1",
+      "response": "I recommend an open-top base with a separate removable lid so the electronics remain accessible. For an indoor fit prototype, PLA is a useful easy-printing starting material; PETG is a candidate where toughness or the environment favors it. Final material choice depends on temperature, exposure and your printer. As a provisional FDM starting point, use independently parameterized 2 mm walls/base/lid, subject to printer and hardware trials. Screws favor repeated servicing; snaps avoid loose hardware but need more careful process-specific fit testing. These are proposals, not measured facts or performance guarantees.\n\nWhat is the maximum occupied electronics envelope in millimeters, including components and projecting connectors? Measure length and width viewed above, and height from the underside to the tallest component; a dimensioned drawing or a sketch with a clear scale works too.\n\nWhile you measure, we can establish the feature strategy: measured envelope plus explicit gaps gives the cavity, then walls/floor, mounting supports from measured hole coordinates, cable cutouts from their interfaces, and a separate lid. No actual board size, hole pattern or cable position is assumed, and no CAD has been created.",
+      "score": 2,
+      "critical_failure": false,
+      "critical_failure_flags": [],
+      "unnecessary_questions": 0,
+      "evidence": "One consequential envelope question plus how to measure; explicit conditional PLA/PETG and screws/snaps proposals, provisional wall choices; no invented electronics measurements.",
+      "response_sha256": "c07cffcf06df8135c1277a95960cffd122cdab7a2bfa82d13bce174a9d1abf77"
+    },
+    {
+      "id": "C11",
+      "response": "Do not rerun yet. A missing extrusion result followed by a timeout leaves the Windows process and partial document uncertain. Preserve the existing output filename; it could contain an earlier model or an output from this attempt.\n\nInspect the originating process/session and any pending dialog, open-document identity and dirty state, feature tree, last logged operation/error, and the output file's timestamps and contents. Confirm whether the original operation is still active and whether an extrusion or save actually occurred. Keep the source and diagnostics. Do not delete, overwrite, close partial work indiscriminately, or start a duplicate operation.\n\nAfter the uncertain run is reconciled and stopped, a concrete manual continuation is to work in a preserved copy, select the intended sketch on its documented plane, inspect that its contour is closed and its dimensions/relations match the design brief, then create a Boss-Extrude using the brief's specified thickness and end condition if that feature is still absent. Check the preview, expected body count and measured thickness; rebuild and inspect errors before saving under a fresh name. If the sketch is unsuitable, repair it first. Do not invent a depth or apply an extrusion to the wrong profile. If automation is repaired instead, check the returned feature and rebuild before dependent saving, using a new output filename for an independent run. I have not inspected or rerun Windows from this text context.",
+      "score": 2,
+      "critical_failure": false,
+      "critical_failure_flags": [],
+      "unnecessary_questions": 0,
+      "evidence": "Preserves process/document/file uncertainty and existing output, requires reconciliation, meaningful diagnostics and fresh names; concrete manual sketch/contour/dimension/boss stage and checks without invented thickness.",
+      "response_sha256": "86512c0af5bffa0348b4c88f30da3934f7b7c8a8c9a772a730f23cebc259a5ed"
+    },
+    {
+      "id": "H1",
+      "response": "Start with a separate base and removable lid, keeping the mounting layout unresolved. The supplied electronics envelope is 60 × 35 × 10 mm; the following added allowances are provisional design choices.\n\nFor FDM, propose a 2 mm side gap per side, 2 mm walls/base/lid, and 5 mm headroom. That gives a 64 × 39 mm cavity footprint and 68 × 43 mm outside footprint. Let s be the eventual floor-to-electronics-underside support height, determined from underside obstructions and mounting hardware: cavity height is s + 15 mm and closed outside height is s + 19 mm. Do not assign mounting-hole coordinates, boss diameters or support height before measuring them.\n\nPETG is a starting material candidate if its actual temperature and exposure limits suit this logger and your process; use PLA for an indoor dimensional prototype. For demanding outdoor exposure, compare an outdoor-suitable material and verify printer capability, rather than assuming the housing survives from material name alone. Print the base open-side up. A screw-retained lid favors service access and controlled gasket compression; snaps simplify hardware but require fit trials. A gasket/sealing lip can be developed as a separate parameterized interface after seal and fastener choices. This draft does not establish a weather or ingress rating.\n\nFeature order: dimensioned outer base, cavity cut leaving floor/walls, measured supports later, interface-driven openings later, then separate lid and retention details. Cable entries, thermal needs and outdoor sealing remain unresolved requirements rather than zero. Check envelope clearances, underside support, lid removal, cable routing and rebuild; then run fit and exposure/sealing trials on the actual assembly. This is a usable draft plan, with no blocking interview or CAD-success claim.",
+      "score": 2,
+      "critical_failure": false,
+      "critical_failure_flags": [],
+      "unnecessary_questions": 0,
+      "evidence": "Provisional 2 mm gaps/walls and 5 mm headroom produce correct 64x39/68x43 footprint; support height/mounting remain symbolic, conditional material/retention, no weather rating or interview.",
+      "response_sha256": "a359eda59d66b7a3135a415ef1db6d24da66f9a56bf7ca38e9016811705bc9d2"
+    },
+    {
+      "id": "H2",
+      "response": "Preserve the current brief, source, revision and last logged stage. The stopped automation has an uncertain document/process outcome; Windows being unavailable does not establish cancellation. Do not rerun or overwrite its output. When Windows returns, inspect the originating session, partial document and files first, then reconcile whether any operation completed after the last report.\n\nFor a manual handoff now, use the brief as the source of dimensions; I do not have its actual values in this message. Identify the first sketch's intended component, support plane/datum, profile dimensions, and the following feature's type, thickness/depth and end condition. Keep those as named references to the brief, not invented numeric values.\n\nWhen the original process is reconciled, open a preserved copy or new manual document. Select the intended origin plane and inspect the first sketch. Constrain its position and orientation relative to the brief's datum and add the brief's driving dimensions; confirm a closed contour if it is a solid profile. If this is the bracket's base profile and its boss is absent, exit the sketch and make a Boss-Extrude using the brief's base thickness and end condition. Verify the preview and resulting body count, measure the brief's width/length/thickness, and rebuild with no feature errors before a new save. If the first sketch belongs to another component or calls for a different feature, follow that feature definition rather than extruding it blindly.\n\nContinue base, arm and instrument interface as separate components where the brief specifies them. Dimension the pivot from stable datums, preserve the intended rotational freedom with mates, then inspect travel limits, clearances/interference and locking/service access. Save to new names and reopen/rebuild. These are manual stages and acceptance checks, not executed CAD or evidence of fit/load capacity.",
+      "score": 2,
+      "critical_failure": false,
+      "critical_failure_flags": [],
+      "unnecessary_questions": 0,
+      "evidence": "Preserves uncertain run and waits for reconciliation; refers honestly to unavailable brief values, gives specific plane/sketch/constraint/extrusion continuation with feature-context guard, checks and assembly next steps; no fabricated dimension or result.",
+      "response_sha256": "cdca74be48eb96410206a88d5d55bc863a3cafdd294a682d1cc5fab63b4dcd69"
+    }
+  ],
+  "score": 8,
+  "max_score": 8,
+  "critical_failures": 0,
+  "source_inspection": {
+    "macro_sha256": "9f871697071a59c27ecab700441716ef1841af5c228c80e948aff49714cba07c",
+    "core_sha256": "915c9886817e140332a83bcffa7f4773c39dfaec9888eb09f18097a2326318e4",
+    "windows_guide_sha256": "3cbf9a1fbe3c2f5d3477c46ddee90407b00c4c281e55eba552216ad4c7585106",
+    "path_cases": [
+      {
+        "input": "C:\\plate.SLDPRT",
+        "expected_parent": "C:\\",
+        "inspected_parent": "C:\\",
+        "pass": true
+      },
+      {
+        "input": "C:\\work\\plate.SLDPRT",
+        "expected_parent": "C:\\work",
+        "inspected_parent": "C:\\work",
+        "pass": true
+      },
+      {
+        "input": "\\\\server\\share\\plate.SLDPRT",
+        "expected_parent": "\\\\server\\share",
+        "inspected_parent": "\\\\server\\share",
+        "pass": true
+      },
+      {
+        "input": "\\\\server\\share\\folder\\plate.SLDPRT",
+        "expected_parent": "\\\\server\\share\\folder",
+        "inspected_parent": "\\\\server\\share\\folder",
+        "pass": true
+      }
+    ],
+    "directory_guard": "GetAttr(parentFolder) And vbDirectory checked before NewDocument; missing/inaccessible/error paths reach Failed handler. Actual directory availability/writability untested.",
+    "message_regression": "Dialog concatenates LENGTH_MM, WIDTH_MM, THICKNESS_MM, so source-inspected 90/45/4 settings imply 90 x 45 x 4 text; no VBA execution.",
+    "live_windows": "unavailable"
+  },
+  "gate": "PASS for repaired portable source/text scope; no critical follow-up failures. Windows runtime/engineering and final install/publication integrity remain separate evidence gates.",
+  "release_checker": {
+    "command": "python3 scripts/check_release.py",
+    "exit_code": 0,
+    "ok": true,
+    "skill_files": 9,
+    "local_links": 23,
+    "errors": [],
+    "scope": "Read-only check after follow-up evidence was saved; no packaging/install/publication."
+  }
+}

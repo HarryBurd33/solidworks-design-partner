@@ -1,0 +1,13 @@
+{
+  "source_sha256": "9f871697071a59c27ecab700441716ef1841af5c228c80e948aff49714cba07c",
+  "method": "Executed Python checks of source patterns and independent path-string oracle; no VBA/Windows execution",
+  "collision_guard_before_new_document": true,
+  "directory_check_before_new_document": true,
+  "drive_root_guard": true,
+  "dynamic_dimension_message": true,
+  "unit_conversion": true,
+  "save_result_checked": true,
+  "no_close_existing_docs": true,
+  "compile": "unavailable",
+  "live_cad": "unavailable"
+}

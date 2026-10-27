@@ -1,0 +1,30 @@
+{
+  "regressions": [
+    "C1",
+    "C11"
+  ],
+  "held_out": [
+    {
+      "id": "H1",
+      "input": "Draft now: an outdoor printed case for a temperature logger. The electronics envelope is60x35x10 mm. I will measure the mounting later. Suggest a useful starting design.",
+      "expected": "Conditional material/process and retention recommendations; provisional wall/clearance choices; no invented mounting dimensions; no blocking interview."
+    },
+    {
+      "id": "H2",
+      "input": "My adjustable instrument bracket automation stopped after its first sketch. Windows is unavailable now. Continue with something I can do manually later; dimensions are in the design brief.",
+      "expected": "Preserve uncertain state and no blind rerun; specific manual continuation with referenced brief parameters and checks; no fabricated success or dimensions."
+    }
+  ],
+  "resource_regression": {
+    "input": "C:\\plate.SLDPRT",
+    "old_parent": "C:",
+    "required_parent": "C:\\",
+    "inspection": "Drive-root preservation and directory attribute check before NewDocument; no live filesystem result inferred."
+  },
+  "gate": "No critical failure; meet all four text expectations and repaired path inspection; retain original outputs/grades.",
+  "message_regression": {
+    "input": "Edit smoke constants from80x40x3 to90x45x4 mm",
+    "expected": "Dialog derives90x45x4 from the constants, with no stale80x40x3 assertion",
+    "method": "Independent source inspection; not VBA execution"
+  }
+}

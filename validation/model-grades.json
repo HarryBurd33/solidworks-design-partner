@@ -1,0 +1,270 @@
+{
+  "method": "Actual model text responses; no CAD tool execution or VBA compilation",
+  "generation_order": "All candidate response text was saved before reading rubric/baseline. A JSON-escaping error in C5 code quotation marks was repaired afterward without changing response content.",
+  "grading_blind": false,
+  "baseline_contamination": "Baseline author researched SOLIDWORKS and accidentally received expected criteria/rubric before responding; see execution-notes.md. This is not a clean same-context comparison and proves no causal uplift.",
+  "model": "Inherited active model/effort unknown; no separate paid API route.",
+  "rubric": {
+    "0": "fails material expectation",
+    "1": "partial with noncritical gap",
+    "2": "meets expected observable outcome"
+  },
+  "cases_sha256": "f6c67893d81d25b58ce65756e330c6fbfa947d8a37bf8f9cf241e2b9b4df8f67",
+  "arms": [
+    {
+      "arm": "baseline",
+      "responses_sha256": "10f82bf998f47196c5c259b05641481cf1fd90a543090e7d241db06a9f0d5b21",
+      "total_score": 26,
+      "max_score": 26,
+      "critical_failures": 0,
+      "status": "PASS text criteria only",
+      "cases": [
+        {
+          "id": "C1",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "One envelope question with ruler/calipers or drawing; conditional PETG/PLA and screw/snap proposals.",
+          "response_sha256": "a98e8be563845ff4ab0856c4b37b33cf141e8cd6efb85abde7cc34616dc9225c"
+        },
+        {
+          "id": "C2",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Correct inner 84x54x20, total 88x58x24, board and hole transforms, ordered requested features and checks; no interview.",
+          "response_sha256": "1af1ef58ec841ba04b1b9cf545868ece3ebac2fa9d73d364ff32e9897dc163e7"
+        },
+        {
+          "id": "C3",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "50.8/25.4 conversion, governing-long-edge question, zero openings, photo limit and independent draft.",
+          "response_sha256": "462942802f6e7e39e91089ec7a9a38be308b2ad08c61dfb3a50b49b30a95ea40"
+        },
+        {
+          "id": "C4",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Conditional direct path, P1/R7 recheck, working-copy preservation, dimensions question and operations/checks; no execution claim.",
+          "response_sha256": "8b9b47d85e2612b1914136bb0238b8a4cc5a8ce3a8614528261fbb7567319141"
+        },
+        {
+          "id": "C5",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Actual source with real VBA project/import/save/run, explicit meters, default-template setup, output path, failure checks and rerun guard; no compilation claim.",
+          "response_sha256": "99c4c8061a63d36cf44828099d02c56957df2c39a43ab644c4392c6e9682d896"
+        },
+        {
+          "id": "C6",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Manual plane, centered dimensioned constrained rectangle, blind extrusion, intermediate geometry and checks.",
+          "response_sha256": "019872610fdbdb5111c6183921516001aa6aae40573fc1002514a3d8a2dfc73e"
+        },
+        {
+          "id": "C7",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "94x64 cavity and failed 95x65 fit, fixed exterior/base/lid, propagated brief/features/macro/manual/checks.",
+          "response_sha256": "bd9602e6d351bf2460ec3e853d5ea3e1c5ec5ea6e12993754a0477686e5b8c37"
+        },
+        {
+          "id": "C8",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Three-part assembly, load question, camera interface pending, hinge mates/locking/travel and physical checks.",
+          "response_sha256": "5878e7b5374849320e281a8286c7566792a792df022c495e99704f88e540493b"
+        },
+        {
+          "id": "C9",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Brief direct constrained-size/shape/position answer; no interview.",
+          "response_sha256": "bd56c26cb5d51463018463dfb73878b0b9435e86ea9f30b72eb46aff6b5d874d"
+        },
+        {
+          "id": "C10",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Pasta plan without CAD activation.",
+          "response_sha256": "aed733b3819f93bd62731a5bac18d569d8d598565ed6cce84acb1d5b1e381d9b"
+        },
+        {
+          "id": "C11",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Process/document/file reconciliation, preservation and fresh name; exact errors and explicit manual boss-extrude fallback.",
+          "response_sha256": "f881447b1357366bfca5192a1e71e0aa81427984687b5a71e7ff4123b439db61"
+        },
+        {
+          "id": "C12",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Portable brief/revision/source/manual handoff, chosen file-copy method, actual Windows paths, native acceptance and no invented CAD.",
+          "response_sha256": "30600c7c2a81fefee76b793a85661e90c576c5c7757b957148c732d05ca3139c"
+        },
+        {
+          "id": "C13",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Symbolic board envelope, equations, provisional retention and no invented measurement or interview.",
+          "response_sha256": "73d281e523bd078c962fd039b64da55a358da807086c288ef1d13db2c28b631a"
+        }
+      ]
+    },
+    {
+      "arm": "candidate",
+      "responses_sha256": "dcc4c43a545c31bb17189cb0ad4988959b98655afcc16de3e703467a723bac6d",
+      "total_score": 24,
+      "max_score": 26,
+      "critical_failures": 0,
+      "status": "partial",
+      "cases": [
+        {
+          "id": "C1",
+          "score": 1,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "One envelope question, datum and measurement instructions; useful two-piece/lift-off proposal. Material only depends on conditions; no concrete conditional material recommendation.",
+          "response_sha256": "588f1a4ff732badc3411757637f9ee1b58b9a54dd0c1d6b2075cebaf6982455e"
+        },
+        {
+          "id": "C2",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Correct 84x54x20 cavity and 88x58x24 exterior; preserves board coordinates, supports/pilots, cable cut and all specified features; no new question.",
+          "response_sha256": "dc05c1213f26f42ee9f453fbe6c3e395b52475ba391a2728bcd068209e7ab4b2"
+        },
+        {
+          "id": "C3",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "50.8/25.4 conversion, governing-value question, unavailable/unscaled photo limit, exact zero openings and symbolic draft.",
+          "response_sha256": "257da243dfbb935fc007d710a2d8dd03ee0a16dbf856b79c5638a1d0653cf48e"
+        },
+        {
+          "id": "C4",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Direct fixture P1/R7 identified as synthetic; recheck/preservation/sketch/extrude/rebuild/save-copy checks with no execution claim.",
+          "response_sha256": "762a08938a0a18a13502cccbe628710e2961c9355cc548811e60c8d916f71fe8"
+        },
+        {
+          "id": "C5",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Uses shipped source honestly as permitted; exact constants, explicit meters, genuine project import/save/run, template/output/plane configuration, diagnostics, safe rerun and Windows checks.",
+          "response_sha256": "b96ce8252097f9fe4daa38c4ca28b8b5abc5862775588184cafe58fc003de9a5"
+        },
+        {
+          "id": "C6",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Manual localized plane, constrained 60x30 rectangle, blind 4 extrusion, expected body, rebuild/measure/save/reopen; no interview.",
+          "response_sha256": "9095933b59e76fa956a3de97930f843ddd7225f5b09eba7c27042a0f3e74c87f"
+        },
+        {
+          "id": "C7",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "94x64 and 1 mm deficits, fixed exterior/base/lid, 2.5 mm wall or 101x71 exterior alternatives, coordinated brief/source/manual/check change set.",
+          "response_sha256": "5b5e08009441c7730a211e68bfcb2a67574b1562471468765736b84b7c4d5c0b"
+        },
+        {
+          "id": "C8",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Three components, hinge freedom/lock alternatives, one camera/interface/load question, datums/mates/travel/interference and physical tests.",
+          "response_sha256": "5384b3565915fbcfa52f6d6ef0d945f7f3641a805f02439516e807f64641b4cb"
+        },
+        {
+          "id": "C9",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Brief constrained size/position explanation with editable dimension example; no workflow imposed.",
+          "response_sha256": "83ca3c8b03376b57fdc80d79eecb3a5874ee62abb46733892dd4ff7c666f037e"
+        },
+        {
+          "id": "C10",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Pasta dinner plan, no CAD activation.",
+          "response_sha256": "250a81a09590bc9931a63eca0a784982804885691aa6084b7a0c3de6c79638f0"
+        },
+        {
+          "id": "C11",
+          "score": 1,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "No rerun pending process/document/file/log reconciliation, preservation, meaningful diagnostics and fresh output name. Omits requested manual fallback.",
+          "response_sha256": "1d9c10a77bfa323c7d9d74242f3eb90c6e394e7fa14bb3db79a31cfc797b0c0f"
+        },
+        {
+          "id": "C12",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Portable design-handoff structure and Windows target/template/import/rebuild/dimension/save/reopen checklist; unexecuted labels and no bridge.",
+          "response_sha256": "b79705972c536ebeee3c8b8384bbf71019c1bc430c42553a6861dff885890a00"
+        },
+        {
+          "id": "C13",
+          "score": 2,
+          "critical_failure": false,
+          "critical_failure_flags": [],
+          "unnecessary_questions": 0,
+          "evidence": "Unresolved board symbols, bounded proposed gaps/thickness, envelope equations and staged plan; no invented board measurement or interview.",
+          "response_sha256": "5e963e3802cf736ce3869c214bc045750a8e6ed0dfd68132b117fd9cac815d73"
+        }
+      ]
+    }
+  ],
+  "gate": "PARTIAL: no critical response failures; candidate C1 and C11 have noncritical observable gaps. Source/runtime/release limits are separate. Do not claim all tests passed or causal uplift."
+}
