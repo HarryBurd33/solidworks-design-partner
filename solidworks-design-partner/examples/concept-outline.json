@@ -1,0 +1,9 @@
+{
+  "units": "mm",
+  "title": "Synthetic base, post, and lid concept",
+  "parts": [
+    { "id": "base", "name": "Base envelope", "shape": "box", "position": [0, 0, 0], "size": [80, 50, 4], "status": "proposed", "explode": [0, 0, 0] },
+    { "id": "post", "name": "Post envelope", "shape": "cylinder", "position": [40, 25, 4], "radius": 6, "height": 20, "status": "assumed", "explode": [0, 0, 10] },
+    { "id": "lid", "name": "Lid envelope", "shape": "box", "position": [0, 0, 24], "size": [80, 50, 3], "status": "proposed", "explode": [0, 0, 30] }
+  ]
+}

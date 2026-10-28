@@ -11,6 +11,14 @@ A reusable agent skill that develops rough ideas into buildable specifications a
 
 It activates for developing, modeling, revising or building SOLIDWORKS designs. Complete specifications proceed directly. A quick question such as “What does fully defined mean?” gets a direct answer; an unrelated request does not activate the design workflow.
 
+## Outline before building (1.1)
+
+Before CAD construction or build-macro generation, the skill presents a proportionate parts/interface/dimension/feature outline. “Outline only” stops there; complete tasks avoid another interview. Unknown measurements remain unknown and proposed values stay labeled.
+
+The bundled MIT Anatomy core and original renderer produce editable SVG plus standalone HTML with assembled/exploded arrangements and a parts table driven by the same parameters. Node.js20.10+ is optional for these previews; written outlines still work without it. No separate Anatomy installation, npm packages, API keys or network are required for rendering. [Open the synthetic example](examples/concept-preview/outline.html) or [view its SVG](examples/concept-preview/outline.svg).
+
+Example: `$solidworks-design-partner Outline a two-piece enclosure before building. Show assumptions and interfaces.` See [outline instructions](solidworks-design-partner/references/concept-outlines.md) and [1.1 validation](docs/ANATOMY-UPDATE.md).
+
 ## Three paths and prerequisites
 
 | Path | What you need | What it provides |
@@ -52,4 +60,4 @@ Run `python3 scripts/check_release.py` for local structure, links, privacy-patte
 
 No live SOLIDWORKS session, Windows VBA compiler, native CAD creation, rebuild, save/export or physical fit test was available in this release environment. The portable package is usable now; Windows acceptance remains a documented procedure. Text scenario evaluations use synthetic inputs and do not establish CAD correctness, automatic activation in every host, or physical performance. Source generation is distinct from execution and verified outputs.
 
-Original material is [MIT licensed](LICENSE), copyright2026 HarryBurd33. Linked projects and official documentation retain their own licenses and terms; no third-party implementation is bundled.
+Original material is [MIT licensed](LICENSE), copyright2026 HarryBurd33. Linked projects and official documentation retain their own licenses and terms; the bundled Anatomy core retains Ryan’s original MIT notice in [third-party notices](solidworks-design-partner/THIRD_PARTY_NOTICES.md).

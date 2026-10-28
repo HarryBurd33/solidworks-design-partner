@@ -1,0 +1,44 @@
+{
+  "release_files_equal": 15,
+  "installed_version": "1.1.0",
+  "installed_renderer_tests": [
+    {
+      "id": "valid",
+      "passed": true
+    },
+    {
+      "id": "existing-output-preserved",
+      "passed": true
+    },
+    {
+      "id": "negative-size",
+      "passed": true
+    },
+    {
+      "id": "duplicate-id",
+      "passed": true
+    },
+    {
+      "id": "wrong-units",
+      "passed": true
+    },
+    {
+      "id": "unknown-field",
+      "passed": true
+    },
+    {
+      "id": "zero-height",
+      "passed": true
+    },
+    {
+      "id": "negative-zero-positions",
+      "passed": true
+    },
+    {
+      "id": "escaping",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "windows": "deferred"
+}

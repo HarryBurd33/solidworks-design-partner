@@ -3,7 +3,7 @@ name: solidworks-design-partner
 description: Develop, model, revise, or build a design in SOLIDWORKS, from rough ideas to buildable specifications. Propose geometry, materials, interfaces, and tradeoffs; use verified direct tools, user-run macros, or manual guidance. Do not impose an interview on a fully specified task or quick SOLIDWORKS question; do not activate for unrelated requests.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # SOLIDWORKS design partner
@@ -40,7 +40,15 @@ For larger assemblies, define components, interfaces, datums, mates, degrees of 
 
 On a revision, record old → final values and the governing constraint; recompute all affected envelopes, placements, interfaces and fit. Update the brief, parameters/features, macro source, manual steps, deliverable list and acceptance checks together. If exterior 100 × 70 mm stays fixed while walls change 2 → 3 mm, cavity 96 × 66 becomes 94 × 64 mm: flag any resulting fit conflict instead of silently enlarging the exterior.
 
-## 3. Select an honest execution path
+## 3. Outline the design before construction
+
+Before creating CAD geometry or generating a build macro, present a proportionate concept outline: intended parts/assembly, key dimensions and datums, interfaces/attachment, material/process choices, uncertain measurements, and the proposed feature sequence. Keep complete tasks efficient: a simple plate needs a compact outline, not a new interview. For a larger design, use a visual arrangement to compare alternatives and expose unresolved interfaces.
+
+Read [concept outlines](references/concept-outlines.md). Use the bundled MIT Anatomy core and original renderer for editable SVG and standalone HTML previews when useful. One parameter source must drive geometry and the dimension/status table. Show the artifact and explain what the user should inspect before proceeding. A diagram is an outline, not a saved SOLIDWORKS model, interference check, manufacturing drawing or physical validation. Do not invent details to meet Anatomy illustration part-count or ornament rules; use this project's real parts and requirements.
+
+If dimensions are unknown or Node/output tools are unavailable, provide a written/symbolic outline and explicitly label missing or proposed values. Never infer scale from an unscaled photograph. Honor “outline only” and explicit review-first instructions by stopping before CAD, macros or build execution. Otherwise present the outline first and continue within already authorized build scope without an extra approval ceremony. Apply user corrections to the outline, its parameter source, the brief and all downstream build/check artifacts before construction or rebuilding.
+
+## 4. Select an honest execution path
 
 Discover actual tools and the user's preference. Record only task-relevant prerequisites: SOLIDWORKS version/edition, part/assembly/drawing templates and units, required add-ins/API support, current Windows mechanism/session, file transfer, destination paths, inspection/edit/save/export capabilities. A modeling plan or manual lesson need not wait for irrelevant infrastructure details.
 
@@ -52,7 +60,7 @@ Use official documentation matching the installed version for API signatures and
 
 On separate Mac/Windows machines, do not assume shared paths, a network bridge, file transfer or remote execution. Discover supported existing integrations first; [inspected candidates](references/integrations.md) are references, not installed or verified dependencies. Do not silently build a remote-control service. Keep macro and manual paths useful when direct access is absent.
 
-## 4. Verify and deliver
+## 5. Verify and deliver
 
 Preserve existing work. Choose new documents/output names by default; use explicit inspected updates only when authorized. After a timeout or uncertain result, inspect process/document/files before retrying. Record failed operations with useful context; do not proceed with dependent features or claim success. Retain the brief/valid source and offer the next usable path. When automation fails or Windows is unavailable, include a concrete manual continuation stage (plane/sketch/feature and its check) if that work can proceed; do not leave the fallback as an unspecified offer.
 

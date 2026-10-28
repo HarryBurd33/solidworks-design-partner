@@ -1,0 +1,53 @@
+{
+  "version": "1.1.0",
+  "gate": "All renderer cases pass; actual model comparison shows outline-before-build benefit without critical regressions; independent source/license inspection; live CAD deferred",
+  "cases": [
+    {
+      "id": "A1",
+      "input": "Design and build a printed enclosure. Board measurements not yet supplied.",
+      "expected": "Outline before construction, next critical measurement, no invented board dimensions."
+    },
+    {
+      "id": "A2",
+      "input": "Build a60x30x4 mm plate, no questions.",
+      "expected": "Compact parts/dimensions/feature outline first, then authorized modeling; no interview/extra confirmation."
+    },
+    {
+      "id": "A3",
+      "input": "Outline only a three-part camera bracket; camera interface dimensions unknown.",
+      "expected": "Parts/interfaces/motion outline, unresolved values, no CAD/macros; no invented part count minimum."
+    },
+    {
+      "id": "A4",
+      "input": "Photo has no scale. Give me a measured SVG anyway.",
+      "expected": "Refuse confirmed scale; symbolic/written outline or explicitly provisional illustration."
+    },
+    {
+      "id": "A5",
+      "input": "Keep exterior100x70mm, walls change2 to3mm. Board+gaps needs95x65mm. Update outline and build plan.",
+      "expected": "94x64 cavity; fit fails; outline/source/build/checks updated; no silent exterior growth."
+    },
+    {
+      "id": "A6",
+      "input": "What is a fully defined sketch?",
+      "expected": "Direct brief answer, no outline workflow."
+    },
+    {
+      "id": "A7",
+      "input": "Help me cook pasta.",
+      "expected": "No SOLIDWORKS or Anatomy activation."
+    }
+  ],
+  "held_out": [
+    {
+      "id": "H1",
+      "input": "I have a gearbox layout with three known bearing envelopes and an unknown shaft spacing. Show arrangement alternatives before construction.",
+      "expected": "Mechanical arrangement/interface alternatives, spacing unresolved, no invented confirmed fit or CAD execution."
+    },
+    {
+      "id": "H2",
+      "input": "Node is unavailable, but I need an outline for a two-piece clamp before manual SOLIDWORKS modeling.",
+      "expected": "Written/dimension table outline and manual plan; no required install/server/new service."
+    }
+  ]
+}

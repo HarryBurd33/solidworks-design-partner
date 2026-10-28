@@ -1,4 +1,4 @@
-# SOLIDWORKS design partner 1.0.0
+# SOLIDWORKS design partner 1.1.0
 
 Use `$solidworks-design-partner` with a rough design idea, detailed specification or revision. Start at [SKILL.md](SKILL.md). It supports verified direct tools, user-run macro source and manual SOLIDWORKS guidance. It requires no Skill Forge installation or new remote service.
 
@@ -8,4 +8,8 @@ Copy this complete folder into the host's user skill directory, preserving exist
 
 See [Windows macros](references/windows-macros.md) for prerequisites, source import, execution, troubleshooting, reruns and the remaining live acceptance procedure. [SmokePlate.bas](examples/SmokePlate.bas) is synthetic source; it is not a binary .swp or an executed CAD model. Use [the brief](templates/design-brief.md) and [manual guide](references/manual-modeling.md) without Windows remote access. Configure version/templates/transfer/paths for your setup.
 
-Release limitations: no Windows compiler or live SOLIDWORKS tests were run by this release build. No native CAD files are bundled; no physical fit or performance is certified. [Integration references](references/integrations.md) describe inspected upstream tools, licenses and limits. All bundled material is original and [MIT licensed](LICENSE). Repository evidence and release packages: [GitHub](https://github.com/HarryBurd33/solidworks-design-partner).
+Release limitations: no Windows compiler or live SOLIDWORKS tests were run by this release build. No native CAD files are bundled; no physical fit or performance is certified. [Integration references](references/integrations.md) describe inspected upstream tools, licenses and limits. Original files are [MIT licensed](LICENSE); the bundled Anatomy core retains its own MIT notice. Repository evidence and release packages: [GitHub](https://github.com/HarryBurd33/solidworks-design-partner).
+
+Before CAD work, the skill now presents a parts/interface/dimension/feature outline. Use “outline only” to stop there. [Anatomy-based previews](references/concept-outlines.md) provide editable SVG and standalone HTML with an exploded view and shared parameter/dimension table. Node20.10+ is optional for rendering; written outlines still work without it. Example: `$solidworks-design-partner Outline a two-piece enclosure before building; show proposed values and missing measurements.`
+
+The bundled [Anatomy subset and MIT notice](THIRD_PARTY_NOTICES.md) retain Ryan’s copyright. Preview envelopes are not CAD files or engineering validation; full Anatomy WebGL/3D/PDF/gallery features are not included.

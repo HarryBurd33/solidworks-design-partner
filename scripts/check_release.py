@@ -43,7 +43,7 @@ def check():
         if not desc or not 1 <= len(desc.group(1)) <= 1024:
             errors.append("Invalid description")
     files = skill_files()
-    required = ["SKILL.md", "README.md", "LICENSE", "templates/design-brief.md", "references/windows-macros.md", "references/direct-access.md", "references/manual-modeling.md", "references/integrations.md", "examples/SmokePlate.bas"]
+    required = ["SKILL.md", "README.md", "LICENSE", "templates/design-brief.md", "references/windows-macros.md", "references/direct-access.md", "references/manual-modeling.md", "references/integrations.md", "examples/SmokePlate.bas", "references/concept-outlines.md", "scripts/render-outline.mjs", "examples/concept-outline.json", "vendor/anatomy/iso-kit.mjs", "vendor/anatomy/LICENSE", "THIRD_PARTY_NOTICES.md"]
     for rel in required:
         if NAME + "/" + rel not in files:
             errors.append("Missing " + rel)
@@ -76,14 +76,14 @@ def main():
     parser.add_argument("--package", action="store_true")
     args = parser.parse_args()
     files, errors, links = check()
-    manifest = {"version": "1.0.0", "algorithm": "sha256", "files": files}
+    manifest = {"version": "1.1.0", "algorithm": "sha256", "files": files}
     if args.write_manifest and not errors:
         MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     if not MANIFEST.exists() or json.loads(MANIFEST.read_text()) != manifest:
         errors.append("Release manifest missing or drifted; inspect then use --write-manifest")
     output = {"ok": not errors, "skill_files": len(files), "local_links": links, "errors": errors}
     if args.package and not errors:
-        archive = ROOT / "dist" / (NAME + "-1.0.0.zip")
+        archive = ROOT / "dist" / (NAME + "-1.1.0.zip")
         archive.parent.mkdir(exist_ok=True)
         with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:
             for rel in files:

@@ -1,3 +1,5 @@
+Current release1.1.0: see [Anatomy update and validation](ANATOMY-UPDATE.md). The record below describes release1.0.0 and remains historical evidence.
+
 # Validation record — release 1.0.0
 
 Accepted for the available portable source/text scope on 2026-10-26 (America/Denver). This release does not claim live SOLIDWORKS or physical validation.

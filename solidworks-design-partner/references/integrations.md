@@ -1,6 +1,6 @@
 # Optional integration references and reuse record
 
-Research snapshot: 2026-10-26 (America/Denver). These are candidate tools to inspect on the intended Windows host, not dependencies, installed connections, or endorsements. No upstream CAD tests were reproduced. This skill includes original instructions/source only; no third-party implementation or documentation text is bundled. External projects retain their own licenses.
+Research snapshot: 2026-10-26 (America/Denver). These are candidate tools to inspect on the intended Windows host, not dependencies, installed connections, or endorsements. No upstream CAD tests were reproduced. The SOLIDWORKS integration projects below are references only; none of their code is bundled. Version1.1 separately bundles Anatomy’s MIT drawing core, documented in [third-party notices](../THIRD_PARTY_NOTICES.md). External projects retain their own licenses.
 
 | Candidate | Inspected immutable revision / files | Fit and prerequisites | Rights / disposition |
 |---|---|---|---|

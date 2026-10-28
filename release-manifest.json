@@ -2,14 +2,20 @@
   "algorithm": "sha256",
   "files": {
     "solidworks-design-partner/LICENSE": "747b45fb70bbc46628a8a6b642f3c1283899f54b16f83398b527d96492d364ae",
-    "solidworks-design-partner/README.md": "0a7621ba8e460c995377a55d05bc89f38b1ad53c4390e4b14be7be17743712c4",
-    "solidworks-design-partner/SKILL.md": "915c9886817e140332a83bcffa7f4773c39dfaec9888eb09f18097a2326318e4",
+    "solidworks-design-partner/README.md": "a839ba2a65df7f892143f721c6a73e70b4328fd354b6c2efb4afee131ba6859e",
+    "solidworks-design-partner/SKILL.md": "3bba57f7138ebbffea99153ac84acb686aa3b3a33246bdb35b143932795e2208",
+    "solidworks-design-partner/THIRD_PARTY_NOTICES.md": "b9d5d28309a318be06a81839aeae8aa63a54b967ac5c4c07f629e1b1f02ffdba",
     "solidworks-design-partner/examples/SmokePlate.bas": "9f871697071a59c27ecab700441716ef1841af5c228c80e948aff49714cba07c",
+    "solidworks-design-partner/examples/concept-outline.json": "6cb811e7fa572c119c25441d6d894661c5072ba91497327d2a84ca4d80d34bd7",
+    "solidworks-design-partner/references/concept-outlines.md": "863ec07e7aaa18be9cf6791ac4c678b6ccd2fd5998e3519acbc1d6ebd2c47189",
     "solidworks-design-partner/references/direct-access.md": "b24ba27f7b2447bc84d45487fcae31f2aa644a57b4dfd3b106bf440e32142487",
-    "solidworks-design-partner/references/integrations.md": "725569bf292fe7254ec67a7d2b5d55b115ea4bb1b2148a87c003e96af3c792b3",
+    "solidworks-design-partner/references/integrations.md": "872c5df2416821480b853742d5d9b31b7b62235e7d2588ee8e50ba70bfae7bf5",
     "solidworks-design-partner/references/manual-modeling.md": "74c320af65e7b49c9b56b5fbb763440bfe131b6395e9027d77c005837e235757",
     "solidworks-design-partner/references/windows-macros.md": "3cbf9a1fbe3c2f5d3477c46ddee90407b00c4c281e55eba552216ad4c7585106",
-    "solidworks-design-partner/templates/design-brief.md": "070e5ffda63f3c8d124117405abc2c9f97b8c9739ee55dae429c54373dd67169"
+    "solidworks-design-partner/scripts/render-outline.mjs": "08cd52f13b3bbeeb0e0badc40e2282f645ecb94b169c771d05d0d880596b3d61",
+    "solidworks-design-partner/templates/design-brief.md": "3810d290629dd5c6948e73992bdec63255b62ade7746b53ead0ab24eb3477a21",
+    "solidworks-design-partner/vendor/anatomy/LICENSE": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796",
+    "solidworks-design-partner/vendor/anatomy/iso-kit.mjs": "6d3ecc725d30c3b0346da309cf61dfa5a65017c23620bbd4093009d4fb104018"
   },
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

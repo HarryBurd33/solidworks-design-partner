@@ -1,0 +1,14 @@
+{
+  "browser": "Actual headless Chrome screenshot and DOM execution; assembled and ?view=exploded inspected",
+  "assembled_parts": 3,
+  "exploded_transforms": 3,
+  "dimension_table_unchanged": true,
+  "svg_xml_valid": true,
+  "vendor_core_unchanged": true,
+  "upstream_license_preserved": true,
+  "windows_smoke": "deferred by user",
+  "screenshots": [
+    "assembled.png",
+    "exploded.png"
+  ]
+}

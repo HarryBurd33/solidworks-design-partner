@@ -1,0 +1,58 @@
+{
+  "node": "v24.22.0",
+  "results": [
+    {
+      "id": "valid",
+      "passed": true,
+      "expected": "generate",
+      "stderr": ""
+    },
+    {
+      "id": "existing-output-preserved",
+      "passed": true
+    },
+    {
+      "id": "negative-size",
+      "passed": true,
+      "expected": "reject before output",
+      "stderr": "render-outline: box size[0] must be positive and finite"
+    },
+    {
+      "id": "duplicate-id",
+      "passed": true,
+      "expected": "reject before output",
+      "stderr": "render-outline: part ids must be unique safe identifiers (letter, then letters/digits/_/-, max64)"
+    },
+    {
+      "id": "wrong-units",
+      "passed": true,
+      "expected": "reject before output",
+      "stderr": "render-outline: units must be mm"
+    },
+    {
+      "id": "unknown-field",
+      "passed": true,
+      "expected": "reject before output",
+      "stderr": "render-outline: part: unknown field unknown"
+    },
+    {
+      "id": "zero-height",
+      "passed": true,
+      "expected": "reject before output",
+      "stderr": "render-outline: cylinder height must be positive and finite"
+    },
+    {
+      "id": "negative-and-zero-position",
+      "passed": true,
+      "expected": "generate",
+      "stderr": ""
+    },
+    {
+      "id": "escaping",
+      "passed": true,
+      "expected": "generate",
+      "stderr": ""
+    }
+  ],
+  "actual_subprocesses": true
+}
